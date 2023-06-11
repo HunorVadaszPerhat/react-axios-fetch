@@ -5,8 +5,6 @@
 ![url](https://github.com/HunorVadaszPerhat/react-axios-fetch/blob/master/images/url1.png)
 ![axios-create](https://github.com/HunorVadaszPerhat/react-axios-fetch/blob/master/images/url2.png)
 
-![axios-create](https://github.com/HunorVadaszPerhat/react-axios-fetch/blob/master/images/url2.png)
-
 #### Axios - Promise based
 ![axios-1](https://github.com/HunorVadaszPerhat/react-axios-fetch/blob/master/images/axios-fetch-1.png)
 
