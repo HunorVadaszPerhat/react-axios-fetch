@@ -1,6 +1,7 @@
 import './App.css';
 import React, {useState, useEffect} from'react';
 import axios from 'axios';
+import Post from './Post';
 
 const url = `https://jsonplaceholder.typicode.com/posts`
 
@@ -16,7 +17,7 @@ function App() {
 
 
   // GET - Promise based with axios
-   useEffect(() => {
+/*    useEffect(() => {
     axios
       .get(`${url}/1`)
       .then(response => {
@@ -25,11 +26,11 @@ function App() {
       .catch(error => { // if rejected handle error
         setError(error);      
       })
-  }, []);
+  }, []); */
 
 
   // GET - Promise based with axios.create
-  useEffect(() => {
+/*   useEffect(() => {
     client
       .get(`/1`)
       .then(response => {
@@ -38,7 +39,7 @@ function App() {
       .catch(error => { // if rejected handle error
         setError(error);      
       })
-  }, []);
+  }, []); */
 
 
   // GET - Async/Await based with axios.create 
@@ -158,16 +159,16 @@ function App() {
   },[]) */
 
 
-  useEffect(() => {
+ /*  useEffect(() => {
     axios
       .get(`${url}/1`).then(response => {
         setPost(response.data);
       }
     )
   }, []);
-
+ */
   // Async/Await based with fetch api
-  const fetchPost = async () => { 
+/*   const fetchPost = async () => { 
     const data = await fetch.get(`${url}/1`);
     const response = await data.json();
     setPost(response.data);
@@ -179,21 +180,19 @@ function App() {
     return () => {
       console.log('cleanup');
     }
-  }, []);
+  }, []); */
 
-  if(!post){
+/*   if(!post){
     return(
       <>
         <h4>No data.</h4>
       </>
     );
-  }
+  } */
 
   return (
       <>
-        <div>
-          {post.title}
-        </div>
+        <Post/>
       </>
   );
 }
